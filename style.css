@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Arial", Arial, sans-serif;
+    src: local("Arial"), local(Arial), local("Arial MT");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 16px;
+}
+
+h2 {
+    color: #445161;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.features {
+    color: #ffffff;
+    background-color: #445162;
+    font-size: 20px;
+}
+
+.features-wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.features__list {
+    list-style-image: url(img/check_icon.png);
+}
