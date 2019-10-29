@@ -37,3 +37,9 @@ h1 {
 .features__list {
     list-style-image: url(img/check_icon.png);
 }
+
+.about-product {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+}
