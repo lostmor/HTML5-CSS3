@@ -52,13 +52,16 @@ input {
 }
 
 .features {
+    width: 100%;
     font-size: 20px;
     background-color: #445162;
     line-height: 36px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .features__wrapper {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     color: #ffffff;
     display: flex;
@@ -88,25 +91,62 @@ input {
     height: 214px;
 }
 
+@media (max-width: 960px) {
+    .features__wrapper {
+        max-width: 640px;
+        margin: 0 auto;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .features__img {
+        margin-bottom: 50px;
+    }
+    .features__img {
+        width: 900px;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 660px) {
+    .features__img {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        margin: 0 auto;
+    }
+}
+
 .about-product {
-    width: 1180px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    line-height: 24px;
+}
+
+@media (max-width: 960px) {
+    .about-product__wrapper {
+        max-width: 640px;
+        flex-direction: column;
+    }
+}
+
+.about-product__wrapper {
+    max-width: 1180px;
     margin: 0 auto;
     display: flex;
-    line-height: 24px;
 }
 
 .about-product__heading {
     margin: 50px 0 30px 0;
 }
 
-.about-product__container {
-    width: 755px;
-}
-
 .about-product__text {
     margin: 0;
+    max-width: 653px;
     margin-bottom: 20px;
-    margin-right: 100px;
+    margin-right: 95px;
 }
 
 .about-product {
@@ -120,13 +160,15 @@ input {
 
 .dignity {
     background-color: #f5f5f5;
+    padding: 0 20px;
     padding-top: 50px;
     padding-bottom: 15px;
     line-height: 24px;
+    margin: 0 auto;
 }
 
 .dignity__wrapper {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -137,13 +179,13 @@ input {
 }
 
 .dignity__list {
-    width: 1180px;
+    max-width: 1180px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
-    padding: 0;
+    padding: 0 20px;
 }
 
 .dignity__item {
@@ -152,6 +194,17 @@ input {
     background: url(./img/2-layers.png) no-repeat left 5px;
     padding-left: 40px;
     box-sizing: border-box;
+}
+
+@media (max-width: 960px) {
+    .dignity__list {
+        max-width: 920px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .dignity__item {
+        padding-left: 20px;
+    }
 }
 
 .screenshot {
@@ -173,6 +226,16 @@ input {
     width: 1180px;
 }
 
+.screenshot__image {
+    /* margin-right: 15px; */
+}
+
+@media (max-width: 660px) {
+    .screenshot__image {
+        margin-bottom: 15px;
+    }
+}
+
 .screenshot__item {
     width: 580px;
     margin: 0;
@@ -180,12 +243,14 @@ input {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0 20px;
 }
 
-.screenshot__image {
-    margin-right: 15px;
-    width: 200px;
-    height: 150px;
+@media (max-width: 660px) {
+    .screenshot__item {
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }
 
 .screenshot__title {
@@ -273,7 +338,13 @@ input {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
+}
+
+@media (max-width: 960px) {
+    .plan {
+        flex-direction: column;
+    }
 }
 
 .plan__heading {
@@ -338,6 +409,31 @@ input {
     border-radius: 6px;
 }
 
+.leave__video {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.leave__text {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    margin-top: -450px;
+    position: relative;
+    z-index: 9999;
+}
+
+.leave {
+    margin-bottom: 340px;
+}
+
 .contact {
     background-color: #445162;
     color: #ffffff;
@@ -366,11 +462,12 @@ input {
 
 .contact__input {
     width: 480px;
-    height: 20px;
+    height: 30px;
     border-radius: 6px;
     color: #445162;
     font-size: 16px;
     padding: 10px;
+    margin-bottom: 15px;
 }
 
 .contact__textarea {
@@ -380,12 +477,14 @@ input {
     color: #445162;
     font-size: 16px;
     padding: 10px;
+    margin-bottom: 15px;
 }
 
 .contact__form-button {
     text-align: center;
     background: none;
     margin: 20px;
+    margin-bottom: 50px;
     width: 140px;
     height: 40px;
     background-color: #ffffff;
@@ -400,7 +499,6 @@ input {
     display: flex;
     flex-direction: column;
     width: 500px;
-    height: 360px;
     justify-content: space-between;
     align-items: center;
     margin-right: 45px;
@@ -410,7 +508,6 @@ input {
     display: flex;
     flex-direction: column;
     width: 500px;
-    height: 290px;
     justify-content: space-between;
 }
 
@@ -475,4 +572,9 @@ input {
     color: #445161;
     font-size: 12px;
     background: #f5f5f5;
+}
+
+.footer-text {
+    padding: 10px;
+    margin: 0;
 }
