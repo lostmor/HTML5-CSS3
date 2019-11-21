@@ -1370,37 +1370,8 @@ textarea {
     padding: 0;
 }
 
-.quick__item {
-    list-style: none;
-}
-
-.quick__item:before {
-    content: 'f0da';
-    color: #0087be;
-    font-family: 'Font Awesome 5 Free';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 19.04px;
-    letter-spacing: 1.8px;
-    padding-right: 20px;
-}
-
-.services__item {
-    list-style: none;
-}
-
-.services__item:before {
-    content: '';
-    color: #0087be;
-    font-family: 'Font Awesome 5 Free';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 19.04px;
-    letter-spacing: 1.8px;
-    padding-right: 20px;
-}
-
 .services__list,
 .quick__list {
+    list-style-image: url("./image/list.png");
     padding: 0;
 }
