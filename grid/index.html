@@ -9,10 +9,7 @@
     <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/webfonts/fa-regular-400.woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/webfonts/fa-regular-400.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/webfonts/fa-solid-900.woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/webfonts/fa-solid-900.woff2" as="font" crossorigin="anonymous">
+    <link href="./css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./main.css">
     <title>Document</title>
@@ -25,7 +22,7 @@
             <div class="contacts__container">
                 <div class="contacts__time">
                     <span class="contacts__icon-container">
-                        <p class="contacts__icon"></p>
+                        <p class="contacts__icon"><i class="far fa-clock"></i></p>
                     </span>
                     <div class="contacts__texts">
                         <p class="contacts__header">WORK TIME: 09:00 - 17:00</p>
@@ -34,7 +31,7 @@
                 </div>
                 <div class="contacts__mail">
                     <span class="contacts__icon-container">
-                        <p class="contacts__icon"></p>
+                        <p class="contacts__icon"><i class="fas fa-envelope"></i></p>
                     </span>
                     <div class="contacts__texts">
                         <p class="contacts__header">MAIL US</p>
@@ -43,7 +40,7 @@
                 </div>
                 <div class="contacts__phone">
                     <span class="contacts__icon-container">
-                        <p class="contacts__icon"></p>
+                        <p class="contacts__icon"><i class="fas fa-mobile-alt"></i></p>
                     </span>
                     <div class="contacts__texts">
                         <p class="contacts__header">CALL US</p>
@@ -64,11 +61,11 @@
             </ul>
 
             <ul class="main-nav__social">
-                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link"></a></li>
-                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link"></a></li>
-                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link"></a></li>
-                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link"></a></li>
-                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link main-nav__social-link--last"></a></li>
+                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link"><i class="fab fa-google-plus-g"></i></a></li>
+                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link"><i class="fab fa-vk"></i></a></li>
+                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link"><i class="fab fa-youtube"></i></a></li>
+                <li class="main-nav__social-icon"><a href="#" class="main-nav__social-link main-nav__social-link--last"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -205,7 +202,7 @@
                     <p class="work__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                     <div class="work__article article">
                         <img src="./image/how1.jpg" alt="article image" class="article__image">
-                        <p class="article__head">Lorem ipsum dolor sit amet, </p>
+                        <p class="article__head">Lorem ipsum dolor sit amet</p>
                         <span class="article__container">
                             <time class="article__date" pubdate>April 19, 2017</time>
                             <span class="article__line"> | </span>
@@ -215,7 +212,7 @@
                     </div>
                     <div class="work__article article">
                         <img src="./image/how2.jpg" alt="article image" class="article__image">
-                        <p class="article__head">Lorem ipsum dolor sit amet, </p>
+                        <p class="article__head">Lorem ipsum dolor sit amet</p>
                         <span class="article__container">
                             <time class="article__date" pubdate>April 19, 2017</time>
                             <span class="article__line"> | </span>
@@ -232,26 +229,26 @@
                         <div class="treatment__active">
                             <div class="treatment__container treatment__container--active">
                                 <div class="treatment__icon-container treatment__icon-container--active">
-                                    <p class="treatment__icon"></p>
+                                    <p class="treatment__icon"><i class="fas fa-caret-right"></i></p>
                                 </div>
                                 <p class="treatment__head treatment__head--active">Heart Treatment</p>
                             </div>
                             <p class="treatment__text">Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                             <div class="treatment__container">
                                 <div class="treatment__icon-container">
-                                    <p class="treatment__icon"></p>
+                                    <p class="treatment__icon"><i class="fas fa-caret-right"></i></p>
                                 </div>
                                 <p class="treatment__head">Heart Treatment</p>
                             </div>
                             <div class="treatment__container">
                                 <div class="treatment__icon-container">
-                                    <p class="treatment__icon"></p>
+                                    <p class="treatment__icon"><i class="fas fa-caret-right"></i></p>
                                 </div>
                                 <p class="treatment__head">Heart Treatment</p>
                             </div>
                             <div class="treatment__container">
                                 <div class="treatment__icon-container">
-                                    <p class="treatment__icon"></p>
+                                    <p class="treatment__icon"><i class="fas fa-caret-right"></i></p>
                                 </div>
                                 <p class="treatment__head">Heart Treatment</p>
                             </div>
@@ -261,14 +258,16 @@
         </section>
 
         <section class="gallery">
+
             <h2 class="gallery__head">Gallery</h2>
             <p class="gallery__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-            <img src="./image/gallery1.jpg" alt="" class="gallery__image gallery__image--1">
-            <img src="./image/gallery2.jpg" alt="" class="gallery__image gallery__image--2">
-            <img src="./image/gallery3.jpg" alt="" class="gallery__image gallery__image--3">
-            <img src="./image/gallery4.jpg" alt="" class="gallery__image gallery__image--4">
-            <img src="./image/gallery5.jpg" alt="" class="gallery__image gallery__image--5">
-            <img src="./image/gallery6.jpg" alt="" class="gallery__image gallery__image--6">
+            <div class="gallery__wrapper"><img src="./image/gallery1.jpg" alt="" class="gallery__image gallery__image--1">
+                <img src="./image/gallery2.jpg" alt="" class="gallery__image gallery__image--2">
+                <img src="./image/gallery3.jpg" alt="" class="gallery__image gallery__image--3">
+                <img src="./image/gallery4.jpg" alt="" class="gallery__image gallery__image--4">
+                <img src="./image/gallery5.jpg" alt="" class="gallery__image gallery__image--5">
+                <img src="./image/gallery6.jpg" alt="" class="gallery__image gallery__image--6">
+            </div>
             <!-- <div class="gallery__card-text gallery__card-text--1">Sed ut diverspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
             <div class="gallery__card-text gallery__card-text--2">Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
             <div class="gallery__card-text gallery__card-text--3">Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</div>
@@ -286,33 +285,33 @@
                     <img src="./image/team1.png" alt="team photo" class="team__photo">
                     <p class="team__name">Dr Ricky Doe</p>
                     <p class="team__post">Assistant Surgeon</p>
-                    <a href="#" class="team__link"></a>
-                    <a href="#" class="team__link"></a>
-                    <a href="#" class="team__link"></a>
+                    <a href="#" class="team__link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="team__link"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="team__link"><i class="fab fa-vk"></i></a>
                 </div>
                 <div class="team__item">
                     <img src="./image/team2.png" alt="team photo" class="team__photo">
                     <p class="team__name">Dr Ricky Doe</p>
                     <p class="team__post">Assistant Surgeon</p>
-                    <a href="#" class="team__link"></a>
-                    <a href="#" class="team__link"></a>
-                    <a href="#" class="team__link"></a>
+                    <a href="#" class="team__link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="team__link"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="team__link"><i class="fab fa-vk"></i></a>
                 </div>
                 <div class="team__item">
                     <img src="./image/team3.png" alt="team photo" class="team__photo">
                     <p class="team__name">Dr Ricky Doe</p>
                     <p class="team__post">Assistant Surgeon</p>
-                    <a href="#" class="team__link"></a>
-                    <a href="#" class="team__link"></a>
-                    <a href="#" class="team__link"></a>
+                    <a href="#" class="team__link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="team__link"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="team__link"><i class="fab fa-vk"></i></a>
                 </div>
                 <div class="team__item">
                     <img src="./image/team4.png" alt="team photo" class="team__photo">
                     <p class="team__name">Dr Ricky Doe</p>
                     <p class="team__post">Assistant Surgeon</p>
-                    <a href="#" class="team__link"></a>
-                    <a href="#" class="team__link"></a>
-                    <a href="#" class="team__link"></a>
+                    <a href="#" class="team__link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="team__link"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="team__link"><i class="fab fa-vk"></i></a>
                 </div>
             </div>
         </section>
@@ -348,11 +347,11 @@
                     </div>
                 </div>
                 <div class="get__social">
-                    <a href="#" class="get__links"></a>
-                    <a href="#" class="get__links"></a>
-                    <a href="#" class="get__links"></a>
-                    <a href="#" class="get__links"></a>
-                    <a href="#" class="get__links"></a>
+                    <a href="#" class="get__links"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="get__links"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="get__links"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="get__links"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="get__links"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
 
