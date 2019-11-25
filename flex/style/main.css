@@ -199,7 +199,7 @@ input[type="radio"]:not(:checked)+label {
     cursor: pointer;
 }
 
-.slider__controls-label--active {
+.slider__controls-label_active {
     width: 8px;
     height: 8px;
     background-color: #f2f2f2;
@@ -304,7 +304,7 @@ input[type="radio"]:not(:checked)+label {
     font-size: 11px;
 }
 
-.page-footer__text--link {
+.page-footer__text_link {
     padding-bottom: 5px;
     border-bottom: 1px solid #484848;
 }
