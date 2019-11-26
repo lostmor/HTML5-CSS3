@@ -171,6 +171,26 @@ input[type="radio"]:not(:checked)+label {
     padding: 0 30px;
 }
 
+.links__icon-container_twitter:hover {
+    background-color: #1da0f1;
+}
+
+.links__icon-container_linkedin:hover {
+    background-color: #01649b;
+}
+
+.links__icon-container_pinterest:hover {
+    background-color: #e00022;
+}
+
+.links__icon-container_google:hover {
+    background-color: #d85043;
+}
+
+.links__icon-container_rss:hover {
+    background-color: #ea7c31;
+}
+
 .slider__img {
     padding: 9px;
     border: 1px solid #e2e2e2;
