@@ -68,7 +68,7 @@ input[type="radio"]:not(:checked)+label {
     justify-content: space-between;
 }
 
-.logo__img {
+.logo__item {
     color: #333333;
     font-size: 36px;
     text-transform: uppercase;
@@ -198,7 +198,7 @@ input[type="radio"]:not(:checked)+label {
     margin-bottom: 20px;
 }
 
-.slider__button {
+.enter__button {
     width: 20px;
     height: 20px;
     background-color: #333333;
@@ -209,7 +209,7 @@ input[type="radio"]:not(:checked)+label {
     border-radius: 50%;
 }
 
-.slider__controls-label {
+.enter__controls-label {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -219,7 +219,7 @@ input[type="radio"]:not(:checked)+label {
     cursor: pointer;
 }
 
-.slider__controls-label_active {
+.enter__controls-label_active {
     width: 8px;
     height: 8px;
     background-color: #f2f2f2;
@@ -230,13 +230,13 @@ input[type="radio"]:not(:checked)+label {
     cursor: pointer;
 }
 
-.slider__controls {
+.enter__controls {
     width: 100px;
     display: flex;
     justify-content: space-between;
 }
 
-.slider__toggles {
+.enter__toggles {
     width: 160px;
     display: flex;
     justify-content: space-between;
@@ -246,9 +246,6 @@ input[type="radio"]:not(:checked)+label {
 .enter {
     background-color: #f2f2f2;
     padding: 30px;
-}
-
-.enter__slider {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,7 +261,7 @@ input[type="radio"]:not(:checked)+label {
     text-align: center;
 }
 
-.features__list {
+.feature__list {
     display: flex;
     justify-content: space-between;
     padding: 50px 100px;
@@ -299,7 +296,9 @@ input[type="radio"]:not(:checked)+label {
     background-color: #3b3b3b;
 }
 
-.page-footer__head {
+.contacts__head,
+.links__head .block__head,
+.form__head {
     color: #666666;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -315,7 +314,7 @@ input[type="radio"]:not(:checked)+label {
     float: right;
 }
 
-.blog__head {
+.blog__head_article {
     font-weight: bold;
 }
 
@@ -324,7 +323,7 @@ input[type="radio"]:not(:checked)+label {
     font-size: 11px;
 }
 
-.page-footer__text_link {
+.links__text {
     padding-bottom: 5px;
     border-bottom: 1px solid #484848;
 }
@@ -356,7 +355,7 @@ input[type="radio"]:not(:checked)+label {
     margin-bottom: 10px;
 }
 
-.page-footer__form {
+.form {
     display: flex;
     flex-direction: column;
 }
@@ -379,6 +378,9 @@ input[type="radio"]:not(:checked)+label {
 
 .page-footer__text,
 .project__text,
-.feature__text {
+.feature__text,
+.block__text,
+.contacts__text,
+.links__text {
     line-height: 20.8px;
 }
